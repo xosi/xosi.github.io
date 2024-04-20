@@ -9,6 +9,21 @@
             margin: 0;
             padding: 0;
         }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .lefter {
+            float: left;
+
+        }
+        .righter {
+            float: right;
+
+        }
+        .margin-top {
+            margin-top: 18px;
+        }
         .container {
             width: 1226px;
             margin: 0 auto;
@@ -19,28 +34,31 @@
             background-color: #333;
             color: #fff;
         }
+       .header .menu {
+           float: left;
+        }
+       .header .account {
+           float: right;
+        }
+
        .sub-header {
             height: 100px;
             background-color: #ffffff;
             color: #fff;
         }
-       .menu {
-           float: left;
-        }
-       .account {
-           float: right;
-        }
-       .logo {
+       .sub-header .logo {
             float: left;
             margin-right: 35px;
            margin-top: 22px;
            border: 1px solid #ccc;
+           width:56px;
+           height:56px;
         }
-       .sub-menu {
+       .sub-header .sub-menu {
             float: left;
             border: 1px solid #ccc;
         }
-       .search-box {
+       .sub-header .search-box {
             float: right;
             margin-top: 25px;
            border: 1px solid #ccc;
@@ -78,6 +96,10 @@
            font-family: "Microsoft Yahei", sans-serif;
            text-decoration: none;
        }
+       .menu a:hover {
+            color: #fff;
+
+        }
        .account a {
                color: #b0b0b0;
             line-height: 40px;
@@ -92,6 +114,163 @@
             line-height: 100px;
             margin-right: 15px;
             font-size: 16px;
+            font-family: "Microsoft Yahei", sans-serif;
+            text-decoration: none;
+        }
+       .sub-menu a:hover {
+            color: #ff6700;
+        }
+
+       .slider .slider-inner  {
+            width: 1226px;
+            height: 460px;
+            cursor: pointer;
+        }
+
+       .news .news-right .list-item {
+           float: right;
+           display: inline-block;
+           width: 316px;
+           height: 170px;
+           margin-left: 10px;
+           cursor: pointer;
+
+       }
+       .news .news-left {
+           width: 234px;
+           height: 170px;
+           background-color: #665e57;
+
+       }
+       .news .news-left .item {
+           float: left;
+           width: 76px;
+           height: 82px;
+           display: inline-block;
+           margin-top: 8px;
+           opacity: 0.7;
+       }
+       .news .news-left .item:hover {
+           opacity: 1;
+       }
+       .news .news-left .item .ico {
+           width: 24px;
+           height: 24px;
+           margin: 10px 25px;
+       }
+       .news .news-left .item a {
+           color: #fff;
+           font-size: 10px;
+           font-family: "Microsoft Yahei", sans-serif;
+           text-decoration: none;
+           display: block;
+           margin-top: 10px;
+           text-align: center;
+       }
+
+       .download .down {
+           float: left;
+           font-size: 24px;
+           font-family: "Microsoft Yahei", sans-serif;
+       }
+       .download .down:after {
+            content: "(download)";
+        }
+       .download .down .qcode {
+           /*display: none;*/
+           opacity: 0;
+           width: 100px;
+           height: 100px;
+           margin: 20px auto;
+           border: 1px solid #ccc;
+        }
+       .download .down:hover .qcode {
+            /*display: block;*/
+            opacity: 1;
+        }
+
+        .clear .title {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border: 1px solid #a9dfbf;
+        }
+        .clear .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 1500px;
+
+        }
+        .back {
+            position: fixed;
+            bottom: 100px;
+            right: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #ff6a00;
+            color: #fff;
+            font-size: 10px;
+            font-family: "Microsoft Yahei", sans-serif;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .dialog {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 200px;
+            margin: 0 auto;
+            width: 600px;
+            height: 300px;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .dialog div {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 14px;
+            font-family: "Microsoft Yahei", sans-serif;
+            text-decoration: none;
+        }
+        .dialog h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 24px;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        .dialog form {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .dialog input[type="text"],.dialog input[type="password"] {
+            width: 300px;
+            height: 40px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            font-size: 14px;
+            font-family: "Microsoft Yahei", sans-serif;
+            margin-right: 10px;
+        }
+        .dialog input[type="submit"] {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: #fff;
+            font-size: 14px;
+            font-family: "Microsoft Yahei", sans-serif;
+            cursor: pointer;
+        }
+        .dialog a {
+            color: #fff;
+            font-size: 14px;
             font-family: "Microsoft Yahei", sans-serif;
             text-decoration: none;
         }
@@ -130,13 +309,11 @@
         <div style="clear: both;"></div>
         </div>
 </div>
-</body>
 
-<body>
 <div class="sub-header">
     <div class="container">
         <div class="logo">
-            <img src="/static/logo.png" alt="小米logo" width="56" >
+            <img src="/static/logo.png" alt="小米logo"  >
         </div>
         <div class="sub-menu">
             <a href="/">全部商品分类</a>
@@ -158,5 +335,135 @@
         <div style="clear: both;"></div>
     </div>
 </div>
+
+<div class="slider">
+    <div class="container">
+        <div class="slider-inner">
+            <img src="/static/mi.png" alt="slider1">
+        </div>
+    </div>
+</div>
+
+<div class="news margin-top">
+    <div class="container">
+        <div class="news-left lefter">
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">保障服务</a>
+            </div>
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico2.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">企业团购</a>
+            </div>
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico3.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">F码通道</a>
+            </div>
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico4.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">话费充值</a>
+            </div>
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico5.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">以旧换新</a>
+            </div>
+            <div class="item">
+                <div class="ico">
+                    <img src="/static/ico6.png" alt="list1">
+                </div>
+                <a href="#" target="_blank">话费充值</a>
+            </div>
+       </div>
+
+
+        <div class="news-right righter">
+            <div class="list-item">
+                <img src="/static/mi3.png" alt="list1">
+            </div>
+            <div class="list-item">
+               <img src="/static/mi4.png" alt="list1">
+            </div>
+            <div class="list-item">
+                <img src="/static/mi5.png" alt="list1">
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+<!--
+<div class="download margin-top">
+    <div class="container">
+            <div class="down">立即下载
+                <div class="qcode">
+                    <a href="#" target="_blank">
+                        <img src="/static/download.png" alt="xiaomi">
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+-->
+
+<div class="clear margin-top">
+    <div class="container">
+            <div class="clearfix">
+            <div class="title">
+                <img src="/static/download.png"  alt="xiaomi">
+
+            </div>
+            <div class="title">
+                <img src="/static/download.png"  alt="xiaomi">
+
+            </div>
+            <div class="title">
+                <img src="/static/download.png"  alt="xiaomi">
+
+            </div>
+            <div class="title">
+                <img src="/static/download.png"  alt="xiaomi">
+
+            </div>
+            <div class="title">
+                <img src="/static/download.png"  alt="xiaomi">
+
+            </div>
+
+            </div>
+    </div>
+</div>
+
+<div class="back">
+    返回顶部
+</div>
+
+<div class="dialog">
+    <h1>登录</h1>
+    <form action="" method="post">
+        <div>用户名：
+        <input type="text" name="username" placeholder="请输入用户名">
+            </div>
+        <div >密  码：
+        <input type="password" name="password" placeholder="请输入密码">
+            </div>
+        <div >
+        <input type="submit" value="登录">
+            </div >
+        <a href="#">注册</a>
+        <a href="#">忘记密码?</a>
+    </form>
+</div>
+
 </body>
 </html>
